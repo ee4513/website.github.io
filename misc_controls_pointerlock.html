@@ -46,7 +46,8 @@
 			{
 				"imports": {
 					"three": "./build/three.module.js",
-					"three/addons/": "./jsm/"
+					"three/addons/": "./jsm/",
+					"pointer_lock":"./jsm/controls/PointerLockControls.js"
 				}
 			}
 		</script>
@@ -55,7 +56,9 @@
 
 			import * as THREE from 'three';
 
-			import { PointerLockControls } from 'three/jsm/controls/PointerLockControls.js';
+			// import { PointerLockControls } from 'three/jsm/controls/PointerLockControls.js';
+
+			import * as PointerLockControls from 'pointer_lock';
 
 			let camera, scene, renderer, controls;
 
